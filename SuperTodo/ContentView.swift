@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var list: ItemDefinitionList = ItemDefinitionList(list: mockItems)
+    @State var focus: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ListOfItemsView(items: list, focus: $focus)
     }
 }
 

@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3385AB280AB92C006A18F8 /* ItemDefinitionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3385AA280AB92C006A18F8 /* ItemDefinitionList.swift */; };
 		FAB167472806FCB200A9D5C3 /* SuperTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB167462806FCB200A9D5C3 /* SuperTodoApp.swift */; };
 		FAB167492806FCB200A9D5C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB167482806FCB200A9D5C3 /* ContentView.swift */; };
 		FAB1674B2806FCB300A9D5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1674A2806FCB300A9D5C3 /* Assets.xcassets */; };
 		FAB1674E2806FCB300A9D5C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1674D2806FCB300A9D5C3 /* Preview Assets.xcassets */; };
+		FAB1675F2806FCEB00A9D5C3 /* MockItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB167552806FCEB00A9D5C3 /* MockItems.swift */; };
+		FAB167602806FCEB00A9D5C3 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB167582806FCEB00A9D5C3 /* ItemType.swift */; };
+		FAB167612806FCEB00A9D5C3 /* ItemDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB167592806FCEB00A9D5C3 /* ItemDefinition.swift */; };
+		FAB167622806FCEB00A9D5C3 /* ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1675B2806FCEB00A9D5C3 /* ItemProtocol.swift */; };
+		FAB167632806FCEB00A9D5C3 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1675D2806FCEB00A9D5C3 /* ElementView.swift */; };
+		FAB167642806FCEB00A9D5C3 /* ListOfItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1675E2806FCEB00A9D5C3 /* ListOfItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA3385AA280AB92C006A18F8 /* ItemDefinitionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDefinitionList.swift; sourceTree = "<group>"; };
 		FAB167432806FCB200A9D5C3 /* SuperTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB167462806FCB200A9D5C3 /* SuperTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTodoApp.swift; sourceTree = "<group>"; };
 		FAB167482806FCB200A9D5C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAB1674A2806FCB300A9D5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB1674D2806FCB300A9D5C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAB167552806FCEB00A9D5C3 /* MockItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockItems.swift; sourceTree = "<group>"; };
+		FAB167582806FCEB00A9D5C3 /* ItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		FAB167592806FCEB00A9D5C3 /* ItemDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDefinition.swift; sourceTree = "<group>"; };
+		FAB1675B2806FCEB00A9D5C3 /* ItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
+		FAB1675D2806FCEB00A9D5C3 /* ElementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
+		FAB1675E2806FCEB00A9D5C3 /* ListOfItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,9 @@
 		FAB167452806FCB200A9D5C3 /* SuperTodo */ = {
 			isa = PBXGroup;
 			children = (
+				FAB167542806FCEB00A9D5C3 /* mock */,
+				FAB167562806FCEB00A9D5C3 /* models */,
+				FAB1675C2806FCEB00A9D5C3 /* views */,
 				FAB167462806FCB200A9D5C3 /* SuperTodoApp.swift */,
 				FAB167482806FCB200A9D5C3 /* ContentView.swift */,
 				FAB1674A2806FCB300A9D5C3 /* Assets.xcassets */,
@@ -65,6 +82,50 @@
 				FAB1674D2806FCB300A9D5C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAB167542806FCEB00A9D5C3 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				FAB167552806FCEB00A9D5C3 /* MockItems.swift */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+		FAB167562806FCEB00A9D5C3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FAB167572806FCEB00A9D5C3 /* enums */,
+				FAB167592806FCEB00A9D5C3 /* ItemDefinition.swift */,
+				FA3385AA280AB92C006A18F8 /* ItemDefinitionList.swift */,
+				FAB1675A2806FCEB00A9D5C3 /* protocols */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FAB167572806FCEB00A9D5C3 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				FAB167582806FCEB00A9D5C3 /* ItemType.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		FAB1675A2806FCEB00A9D5C3 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1675B2806FCEB00A9D5C3 /* ItemProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FAB1675C2806FCEB00A9D5C3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1675D2806FCEB00A9D5C3 /* ElementView.swift */,
+				FAB1675E2806FCEB00A9D5C3 /* ListOfItemsView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB1675F2806FCEB00A9D5C3 /* MockItems.swift in Sources */,
+				FAB167612806FCEB00A9D5C3 /* ItemDefinition.swift in Sources */,
+				FAB167622806FCEB00A9D5C3 /* ItemProtocol.swift in Sources */,
 				FAB167492806FCB200A9D5C3 /* ContentView.swift in Sources */,
+				FAB167602806FCEB00A9D5C3 /* ItemType.swift in Sources */,
 				FAB167472806FCB200A9D5C3 /* SuperTodoApp.swift in Sources */,
+				FAB167642806FCEB00A9D5C3 /* ListOfItemsView.swift in Sources */,
+				FA3385AB280AB92C006A18F8 /* ItemDefinitionList.swift in Sources */,
+				FAB167632806FCEB00A9D5C3 /* ElementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SuperTodo/Preview Content\"";
 				DEVELOPMENT_TEAM = PB4VH3S5AV;
 				ENABLE_PREVIEWS = YES;
@@ -279,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.axis.SuperTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -294,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SuperTodo/Preview Content\"";
 				DEVELOPMENT_TEAM = PB4VH3S5AV;
 				ENABLE_PREVIEWS = YES;
@@ -308,7 +376,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.axis.SuperTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
